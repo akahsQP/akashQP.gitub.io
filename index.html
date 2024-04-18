@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Akash Shaha Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">AKASH SHAHA</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <!-- <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li> -->
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>AKASH SHAHA</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Dip.Engineer  ',
+						'STUDENT  ',
+						'Teacher   ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>Engineering Student</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <!-- <p><a href="https://www.youtube.com/@RishabhMishraOfficial" class="btn btn-primary py-3 px-4">YouTube</a> 
+							<a href="https://github.com/rishabhnmishra" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p> -->
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/about_me.png" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Akash Shaha</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Engineering Student</span></p>
+										<p><span class="title-s">Experience: </span> <span>Fresher</span></p>
+										<p><span class="title-s">Address: </span> <span>Shahzadpur, Sirajganj</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Technical skill</p>
+									<span>Matlab Simulink</span> <span class="pull-right">(75%)</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>LOGO Soft Plc</span> <span class="pull-right">(60%)</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Pspice</span> <span class="pull-right">(85%)</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									<span>Proteus</span> <span class="pull-right">(75%)</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									<span>Multisim</span> <span class="pull-right">(75%)</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>CST</span> <span class="pull-right">(50%)</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									<span>ADS</span> <span class="pull-right">(55%)</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									<span>Excel</span> <span class="pull-right">(95%)</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									<span>Microwind</span> <span class="pull-right">55(%)</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									<span>Dsch2</span> <span class="pull-right">(55%)</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>Akash Shaha, under the caring guidance of Gobinda Chandra Shaha, was born and raised in Sirajganj, Bangladesh. In 2014, he completed his 
+									Secondary School Certificate (S.S.C) from Porjana M.N High School, achieving a remarkable CGPA of 5.00 out of GPA-5. His academic journey 
+									continued as he pursued a Diploma in Electrical Engineering at Pabna Polytechnic Institute, graduating in 2018 with a stellar CGPA of 3.84 
+									out of GPA-4, and earning selection for a stipend in recognition of his academic excellence.
+									In 2019, Akash embarked on the next phase of his education, enrolling at Dhaka University of Engineering & Technology, Gazipur, to pursue
+									his graduation. Alongside his studies, Akash honed his practical skills in various areas of electrical engineering, including CT, PT, 
+									Electrical Circuits, and Electronic Circuits. He demonstrated proficiency in a multitude of software applications and acquired hands-on 
+									experience with electronic components and machinery.
+									Akash's academic achievements were complemented by his active participation in extracurricular activities and community service. He held 
+									various leadership roles in student welfare associations, contributed to religious publications, and gained teaching experience across 
+									different educational levels. Notably, he secured the 2nd position in the Hult Prize Idea Competition and showcased his leadership skills
+									 as a Senior Organizer of the DUET EEE Fest-2K22.</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Electrical Engineering Student</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Bachelor of Engineering</span></li>
+									<li class="d-flex"><span>Language:</span> <span>Bangla, English, Hindi</span></li>
+									<li class="d-flex"><span>Other Skills:</span> <span>Load controlling by LOGO PLC, DC/AC machines, electrical wiring, and appliance reconditioning. &amp; SEO</span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Traveling, Travel Photography, Teaching</span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<!-- <div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number=""></span> <span></span>
+									<span>&nbsp;</span> -->
+								</p>
+								<p><a href="https://www.linkedin.com/in/akash-shaha-b280742a8" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>Electrical Engineer with a robust foundation in C/C++ programming, circuit design using Pspice, Proteus, Multisim, and hands-on experience with Arduino and LOGO PLC systems. Adept in electrical troubleshooting, safety, and maintenance with a creative approach to innovation and problem-solving.</p>
+          </div>
+        </div>
+		
+		<div class="row">
+			<h1 class="big-4">Paper AND Publications</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+					<span class="date">Ziggurat Temple Shape Broadband Perfect Metamaterial Absorber for Terahertz Applications</span>
+				   <h2>(Accepted on ICAEEE-2K24)</h2>
+				   <!-- <span class="position"></span> -->
+				   
+					   <ul>
+							   <li>Innovated a five-layer BPMMA with gold, quartz, nickel, and alumina</li>
+							   <li>Surpassed 90% absorption in 3.322-8.209 THz bands; peak at 99.999% at 6.13 THz</li>
+							   <li>Polarization-independent and maintains performance up to 10° flexibility</li>	
+							   <li><p><a href="#">Cite</a></p></li>
+					   </ul>
+				   </p>
+			   </div>
+
+				</div>
+
+				<!-- <div class="resume-wrap ftco-animate">
+					<span class="date">11th Dec–30th Dec,2023</span>
+				   <h2>Ziggurat Temple Shape Broadband Perfect Metamaterial Absorber for Terahertz Applications</h2>
+				   <span class="position">(Accepted on ICAEEE-2K24)</span>
+				   
+					   <ul>
+							   <li>Innovated a five-layer BPMMA with gold, quartz, nickel, and alumina</li>
+							   <li>Surpassed 90% absorption in 3.322-8.209 THz bands; peak at 99.999% at 6.13 THz</li>
+							   <li>Polarization-independent and maintains performance up to 10° flexibility</li>	
+							   <li><p><a href="#">Cite</a></p></li>
+					   </ul>
+				   </p>
+			   </div> -->
+
+
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Double Negative Metamaterial-Embedded Microstrip Patch Antenna for Ka and V-Band Applications</span>
+						<h2>(Accepted on ICAEEE-2K24)</h2>
+						<!-- <span class="position"></span> -->
+						<!-- <p class="mt-4">Polli Biddut Samity, It is a government organization establishment in 1977 , which is responsible for rural electrification and the largest power distribution organization in Bangladesh.  -->
+							<ul>
+									<li>Expertise in constructing MPAs with a three-layer composition, including a copper ground, patch, and quartz substrate</li>
+									<li>Achieved gains of 8.64 dBi, 7.80 dBi, and 7.47 dBi and VSWR of 1.0051, 1.0118, and 1.0066</li>
+									<li>Validated the antenna’s efficiency for dual-band wireless communication systems, suitable for applications in microwaves, radar systems, and 5G communication.</li>
+									<li><p><a href="#">Cite</a></p></li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2020-2024</span>
+    					<h2>Bachelor of Engineering</h2>
+    					<span class="position">Dhaka University of Engineering & Technology, Gazipur</span>
+    					<p class="mt-4">CGPA: 3.65 (4.00).</p>
+    				</div>
+    			</div>
+
+				<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2014-2018</span>
+    					<h2>Diploma In Engineering</h2>
+    					<span class="position">Pabna Polytechnic Institute,Pabna</span>
+    					<p class="mt-4">CGPA: 3.84 (4.00).</p>
+    				</div>
+				</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2014</span>
+    					<h2>Secondary School Cirtificate</h2>
+    					<span class="position">Porjana M.N. High Schooll</span>
+    					<p class="mt-4">CGPA: 5.00 (5.00).</p>
+    				</div>
+				</div>
+    		</div>
+
+			<div class="row">
+				<h1 class="big-4">Experience</h1>
+				<div class="underline"></div>
+			</div>
+			<br>
+			
+			<div class="row">
+					<div class="col-md-6">
+						<div class="resume-wrap ftco-animate">
+							<span class="date">11th Dec–30th Dec,2023</span>
+							<h2>Industrial Training</h2>
+							<span class="position">Polli Biddut Samity</span>
+							<p class="mt-4">Polli Biddut Samity, It is a government organization establishment in 1977 , which is responsible for rural electrification and the largest power distribution organization in Bangladesh. 
+								<ul>
+									<li>Acquiring practical knowledge and skills about switchgear and protection system as:
+										<li>Power Transformer</li>
+										<li>Current Transformer</li>
+										<li>Potential Transformer</li>
+										<li>Auxiliary Transformer</li>
+										<li>Busbar</li>
+										<li>Circuit Breaker</li>
+										<li>Relay</li>
+										<li>Control Room</li>
+										<li>Lighting Arrestor</li>
+									<li>Gaining experience in a real-life working environment.</li>
+									<li>Readiness for workforce integration.</li>
+									<li>Building industry-university relationships.</li>
+								</ul>
+							</p>
+						</div>
+						
+						<!-- <div class="resume-wrap ftco-animate">
+							 <span class="date">11th Dec–30th Dec,2023</span>
+							<h2>Double Negative Metamaterial-Embedded Microstrip Patch Antenna for Ka and V-Band Applications,</h2>
+							<span class="position">(Accepted on ICAEEE-2K24)</span>
+							
+								<ul>
+										<li>Expertise in constructing MPAs with a three-layer composition, including a copper ground, patch, and quartz substrate</li>
+										<li>Achieved gains of 8.64 dBi, 7.80 dBi, and 7.47 dBi and VSWR of 1.0051, 1.0118, and 1.0066</li>
+										<li>Validated the antenna’s efficiency for dual-band wireless communication systems, suitable for applications in microwaves, radar systems, and 5G communication.</li>
+										<li><p><a href="#">Cite</a></p></li>
+								</ul>
+							</p>
+						</div> -->
+		
+					</div>
+		
+					<div class="col-md-6">
+						
+						<div class="resume-wrap ftco-animate">
+							<span class="date">23rd July - 28th August,2022</span>
+							<h2>Training on PLC and Automation</h2>
+							<span class="position">Department of EEE, DUET</span>
+							<p class="mt-4">The Department of Electrical and Electronic Engineering is pivotal in advancing science and technology. Its significance grows with the increasing utilization of electronic devices and electric power across various fields including VLSI, lasers, robotics, communication, and control systems. 
+								<ul>
+									<li>Acquire comprehensive knowledge about Programmable Logic Controllers (PLCs) and their advantages in industrial applications.</li>
+									<li>Understand the working principles of PLCs through schematic and internal electrical diagrams.</li>
+									<li>Explore various types of PLCs including Siemens LOGO! PLC, Siemens S7 Group, Allen Bradley, and Mitsubishi PLC.</li>
+									<li>Learn about PLC output devices and their significance in industrial control systems.</li>
+									<li>Master PLC programming languages, particularly ladder diagrams, for efficient control of processes.</li>
+									<li>Gain hands-on experience in controlling loads using PLCs, bridging theoretical concepts with practical application.</li>
+								</ul>
+							</p>
+						</div>
+						<!-- <div class="resume-wrap ftco-animate">
+							 <span class="date">11th Dec–30th Dec,2023</span>
+							<h2>Ziggurat Temple Shape Broadband Perfect Metamaterial Absorber for Terahertz Applications</h2>
+							<span class="position">(Accepted on ICAEEE-2K24)</span>
+							
+								<ul>
+										<li>Innovated a five-layer BPMMA with gold, quartz, nickel, and alumina</li>
+										<li>Surpassed 90% absorption in 3.322-8.209 THz bands; peak at 99.999% at 6.13 THz</li>
+										<li>Polarization-independent and maintains performance up to 10° flexibility</li>	
+										<li><p><a href="#">Cite</a></p></li>
+								</ul>
+							</p>
+						</div> -->
+		
+					</div>
+
+					
+
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Dhaka,Bangladesh</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://0101010101">+880 1842 735502</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:info@yoursite.com">akashshaha818051@gamil.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="https://drive.google.com/file/d/1sauwEkcucxPmKJ3qGTIFTk28x6QPPKNU/view?usp=sharing">resumelink</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://forms.gle/uLaTShUKXraAvHJ77" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <li class="ftco-animate"><a href="https://wa.link/l8kffg"><span class="icon-whatsapp"></span></a></li>
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/akash-shaha-b280742a8/"><span class="icon-linkedin"></span></a></li>  
+					  <!-- <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-twitter"></span></a></li> -->
+					  <li class="ftco-animate"><a href="https://www.facebook.com/profile.php?id=100006301995300&mibextid=ZbWKwL"><span class="icon-facebook"></span></a></li>
+				      <li class="ftco-animate"><a href="https://www.instagram.com/shaha3247/"><span class="icon-instagram"></span></a></li>
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
